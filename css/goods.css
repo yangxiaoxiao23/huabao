@@ -10,10 +10,28 @@
 .goods-price {font-weight: bold;font-family: Arial, sans-serif;}
 .content-wrap .content-bd .goods-price {color:#cf2a27;!important;}
 
-.goods-weight {}
-.goods-weight dl {}
-.goods-weight dl dt, .goods-weight dl dd {display: inline-block;vertical-align: middle;}
+.goods-unit {}
+.goods-unit dl {}
+.goods-unit dl dt, .goods-unit dl dd {display: inline-block;vertical-align: middle;}
+.goods-unit dl dd {}
+.goods-unit dl dd span, .goods-unit dl dd input {float: left;width: 38px;height: 38px;line-height: 38px;font-size:18px;color:#333;text-align: center;background-color: #eee;font-weight: bold;font-family: Arial, sans-serif;}
+.goods-unit dl dd span.action-sub {border: 1px solid #ddd;}
+.goods-unit dl dd span.action-sub.min-num {color: #999;}
+.goods-unit dl dd input.action-num {-webkit-appearance: none;
+    border-radius: 0;
+    width: 40px;
+    height: 38px;
+    line-height: normal;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+    background: #fff;
+    text-align: center;}
+.goods-unit dl dd span.action-add {border: 1px solid #ddd;}
 
+/*图片滑动CSS*/
 .swipe {
     overflow:hidden;
     height:160px;

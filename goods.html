@@ -16,46 +16,8 @@
     <link rel="stylesheet" href="css/goods.css"/>
     <script src="libs/zepto.min.js"></script>
     <script src="js/Swipe.js"></script>
-    <script>
-
-        (function() {
-            Zepto(function() {
-
-                function imgSwipe(id) {
-                    var obj = null,
-                            oSwipe = $("#" + id),
-                            oImg = oSwipe.children().eq(0).find("img"),
-                            oLi = oSwipe.children().eq(1).find("li"),
-                            len = oImg.length,
-                            maxCount = len - 2,
-                            count = 1;
-                    obj = new Swipe(document.getElementById(id), {
-                        startSlide: 0,
-                        auto: 4000,
-                        speed: 300,
-                        callback: function(index, element) {
-                            oLi.removeClass("active").eq(index).addClass("active");
-                            if (count <= maxCount) {
-                                if (index >= 1 && index <= maxCount) {
-                                    var currImg = oImg.eq(index + 1);
-                                    if (currImg.length > 0) {
-                                        src = currImg.attr("data-src");
-                                        currImg.attr("src", src)
-                                    }
-                                }
-                                count++
-                            }
-                        }
-                    })
-                }
-
-
-                setTimeout(function() {
-                    imgSwipe("j_imgSwipe");
-                }, 300);
-            })
-        })();
-    </script>
+    <script src="js/page-swipe.js"></script>
+    <script src="js/goods-action.js"></script>
 </head>
 <body>
 <noscript><a class="noScript" href="#">页面需要开启JavaScript体验 &gt;&gt;</a></noscript>
@@ -96,16 +58,15 @@
             </div>
 
         </div>
-        <p class="con-text">烟台大樱桃团购，统一烟台基地规模统一配送上门，保证新鲜。1000斤成团。邻居们快来抢购！</p>
+        <p class="con-text">山东烟台大樱桃5斤装 烟台大樱桃团购，统一烟台基地规模统一配送上门，保证新鲜。1000斤成团。邻居们快来抢购！</p>
         <p class="con-text goods-price bot-bg" id="js-sum">￥199</p>
-        <div class="con-text goods-weight">
-            <dl>
+        <div class="con-text goods-unit">
+            <dl id="js-buy-action">
                 <dt>规格</dt>
                 <dd>
-                    <a href="javascript:void(0);">-</a>
-                    <a href="javascript:void(0);" id="js-num">5</a>
-                    <a href="javascript:void(0);">斤</a>
-                    <a href="javascript:void(0);">+</a>
+                    <span id="js-sub" class="action-sub min-num" href="javascript:void(0);">-</span>
+                    <input id="js-num" class="action-num" type="tel" value="1">
+                    <span id="js-add" class="action-add" href="javascript:void(0);">+</span>
                 </dd>
             </dl>
         </div>
