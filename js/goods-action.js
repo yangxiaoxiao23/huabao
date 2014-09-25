@@ -30,12 +30,12 @@ $(function(){
     });*/
 
 
-    oSubBtn.click(function(){
+    oSubBtn.on('tap', function(){
         var currentNum = oNumText.val();
         oNumText.val(validateGoodsNum(--currentNum));
     });
 
-    oAddBtn.click(function(){
+    oAddBtn.on('tap', function(){
         var currentNum = oNumText.val();
         oNumText.val(validateGoodsNum(++currentNum));
     });

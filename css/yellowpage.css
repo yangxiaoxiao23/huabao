@@ -1,0 +1,17 @@
+body {background:#CDE0FA;}
+
+.search-wrap {margin:20px auto;padding:0 10px;}
+.search-wrap .search-inp {-webkit-appearance: none;padding:0 8px 0 24px;width:100%;height: 36px;
+    line-height: normal;border-radius: 8px;border:1px solid #000;font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;color:#666;background: #eeeeee url(../images/search.png) no-repeat 4px center;background-size:16px 16px;}
+
+.content-wrap {}
+.content-wrap .content-bd {margin:10px;background: #eeeeee;border-radius: 8px;border:1px solid #96a0ae;box-shadow: 0 0 8px #ccc inset ;overflow: hidden;}
+.content-wrap .content-bd ul.contact-items {}
+.content-wrap .content-bd ul li.contact-item {}
+.content-wrap .content-bd ul li.contact-item .contact-wrap {margin:0 5px;border-bottom: 1px solid #ccc;height: 38px;line-height: 38px;}
+.content-wrap .content-bd ul li.contact-item.last-item .contact-wrap {border:0;}
+
+.content-wrap .content-bd ul li.contact-item .phone-num-wrap {float:left;width:100%;}
+.content-wrap .content-bd ul li.contact-item .phone-num-wrap .phone-num {margin-left: 110px;font-family: arial, sans-serif;font-weight: bold;-webkit-user-select:none;}
+.content-wrap .content-bd ul li.contact-item .phone-name {float:left;width:100px;margin-left: -100%;font-weight: 600;overflow: hidden;-webkit-user-select:none;white-space: nowrap;}
+.content-wrap .content-bd ul li.contact-item .phone-icon {float:left;padding-right:20px;width: 24px;margin-left: -44px;height:38px;background: url(../images/phone.png) no-repeat center center;-webkit-user-select:none;}

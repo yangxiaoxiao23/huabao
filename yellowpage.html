@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="中科创">
+    <meta name="description" content="中科创">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>huabao</title>
+    <link rel="apple-touch-icon" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="">
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/yellowpage.css"/>
+    <script src="libs/zepto.min.js"></script>
+    <script>
+
+        $(function(){
+            var oContentBd = $('.content-bd');
+            var contentBgColor = oContentBd.css('background-color');
+            var prevBgColor, currentBgColor;
+            $('.contact-item').on('longTap', function(){
+                currentBgColor = $(this).css('border-bottom-color');
+                $(this).css({
+                    'background': '#ccc',
+                    'border-bottom-color': contentBgColor
+                });
+
+                var prevEl = $(this).prev();
+                if(prevEl.length){
+                    var oContactWrap = prevEl.find('.contact-wrap');
+                    prevBgColor = oContactWrap.css('border-bottom-color');
+                    oContactWrap.css('border-bottom-color', contentBgColor);
+                }
+            }).on('touchend', function(){
+                $(this).css({
+                    'background': 'none',
+                    'border-bottom-color': currentBgColor
+                });
+                var prevEl = $(this).prev();
+                if(prevEl.length){
+                    var oContactWrap = prevEl.find('.contact-wrap');
+                    oContactWrap.css('border-bottom-color', prevBgColor);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<noscript><a class="noScript" href="#">页面需要开启JavaScript体验 &gt;&gt;</a></noscript>
+<div class="content-wrap" id="content-wrap Js-content-wrap">
+
+    <header class="search-wrap">
+        <input id="js-search" class="search-inp" name="keyword" type="search" autocomplete="off" placeholder="拼音首字母或名称查询"/>
+    </header>
+
+    <section class=""></section>
+
+    <section class="content-bd">
+        <ul class="contact-items">
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">钱罐子咨询处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item last-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="content-bd">
+        <ul class="contact-items">
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item last-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="content-bd">
+        <ul class="contact-items">
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item last-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="content-bd">
+        <ul class="contact-items">
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item last-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="content-bd">
+        <ul class="contact-items">
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+            <li class="contact-item last-item">
+                <div class="contact-wrap">
+                    <div class="phone-num-wrap">
+                        <div class="phone-num">0755-26888888</div>
+                    </div>
+                    <div class="phone-name">管理处</div>
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</div>
+</body>
+</html>
