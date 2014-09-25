@@ -9,16 +9,52 @@
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>中科创</title>
+    <title>huabao</title>
     <link rel="apple-touch-icon" href="">
     <link rel="apple-touch-icon" sizes="120x120" href="">
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/goods.css"/>
     <script src="libs/zepto.min.js"></script>
+    <script src="js/Swipe.js"></script>
     <script>
-        Zepto(function($){
-            //alert('Ready to Zepto!')
-        });
+
+        (function() {
+            Zepto(function() {
+
+                function imgSwipe(id) {
+                    var obj = null,
+                            oSwipe = $("#" + id),
+                            oImg = oSwipe.children().eq(0).find("img"),
+                            oLi = oSwipe.children().eq(1).find("li"),
+                            len = oImg.length,
+                            maxCount = len - 2,
+                            count = 1;
+                    obj = new Swipe(document.getElementById(id), {
+                        startSlide: 0,
+                        auto: 4000,
+                        speed: 300,
+                        callback: function(index, element) {
+                            oLi.removeClass("active").eq(index).addClass("active");
+                            if (count <= maxCount) {
+                                if (index >= 1 && index <= maxCount) {
+                                    var currImg = oImg.eq(index + 1);
+                                    if (currImg.length > 0) {
+                                        src = currImg.attr("data-src");
+                                        currImg.attr("src", src)
+                                    }
+                                }
+                                count++
+                            }
+                        }
+                    })
+                }
+
+
+                setTimeout(function() {
+                    imgSwipe("j_imgSwipe");
+                }, 300);
+            })
+        })();
     </script>
 </head>
 <body>
@@ -26,13 +62,39 @@
 <div class="content-wrap" id="content-wrap Js-content-wrap">
     <section class="content-bd">
         <div class="con-pic bot-bg">
-            <ul>
-                <li><img src="images/movie.jpg" alt=""/></li>
-                <li><img src="images/movie.jpg" alt=""/></li>
-                <li><img src="images/movie.jpg" alt=""/></li>
-                <li><img src="images/movie.jpg" alt=""/></li>
-            </ul>
-            <div class="slide"></div>
+            <div data-sudaclick="imgswipe">
+                <div id="j_imgSwipe" class="swipe" data-sudaclick="swipe_pics">
+                    <div class="swipe-wrap">
+                        <div class="swipe_pic">
+                            <a href="javascript:void(0);">
+                                <img class="img" data-src="images/goods1.png" src="images/goods1.png" alt="樱桃">
+                            </a>
+                        </div>
+                        <div class="swipe_pic">
+                            <a href="javascript:void(0);">
+                                <img class="img" data-src="images/goods2.png" src="images/goods2.png" alt="樱桃">
+                            </a>
+                        </div>
+                        <div class="swipe_pic">
+                            <a href="javascript:void(0);">
+                                <img class="img" data-src="images/goods3.png" src="images/goods3.png" alt="樱桃">
+                            </a>
+                        </div>
+                        <div class="swipe_pic">
+                            <a href="javascript:void(0);">
+                                <img class="img" data-src="images/goods4.png" src="images/goods4.png" alt="樱桃">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="swipe_num">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
         <p class="con-text">烟台大樱桃团购，统一烟台基地规模统一配送上门，保证新鲜。1000斤成团。邻居们快来抢购！</p>
         <p class="con-text goods-price bot-bg" id="js-sum">￥199</p>
