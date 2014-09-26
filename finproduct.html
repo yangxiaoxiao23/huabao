@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="中科创">
+    <meta name="description" content="中科创">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>huabao</title>
+    <link rel="apple-touch-icon" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="">
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/finproduct.css"/>
+    <script src="libs/zepto.min.js"></script>
+</head>
+<body>
+<noscript><a class="noScript" href="#">页面需要开启JavaScript体验 &gt;&gt;</a></noscript>
+<div class="content-wrap" id="content-wrap Js-content-wrap">
+
+
+    <section class="content-bd">
+        <p class="con-text pro-introduce">根据您的停车位情况，得出停车月卡费用，购买相应额度的停车宝即可免交停车费。购买成功后，请持停车卡到管理处进行刷卡授权。</p>
+        <p class="con-text pro-desc">例：小张的房子为xx小区xx房，停车位为地下停车位，月卡费用为300元。小张只需购买33,000元的停车宝，即可去管理处刷卡授权，免费停车（相当于年化收益10%）。当小张需要用这笔钱时，小张只需要去管理处办理费用结算并取消停车卡授权即可，若不足一月赎回则需要补足本月剩余时间的月卡费用。</p>
+    </section>
+
+    <section class="content-bd fin-cont">
+        <h3 class="sub-title">物业宝额度计算：</h3>
+        <table class="cal">
+            <tbody>
+            <tr>
+                <td class="label">房号</td>
+                <td>
+                    <p class="room-warp">
+                        <label class="room-group">
+                            <select name="room-num" id="js-room-num">
+                                <option value="">--选择房号--</option>
+                                <option value="0">四季花城8B 28I</option>
+                                <option value="1">四季花城8A 12B</option>
+                                <option value="2">四季花城8C 5C</option>
+                                <option value="3">四季花城8E 7D</option>
+                                <option value="4">四季花城2A 18F</option>
+                                <option value="5">四季花城7B 16L</option>
+                                <option value="6">四季花城5A 13A</option>
+                                <option value="7">四季花城4F 18D</option>
+                                <option value="8">四季花城3B 22B</option>
+                                <option value="9">四季花城2A 32E</option>
+                            </select>
+                        </label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">停车费</td>
+                <td><p class="room-warp sc-wrap"><input class="sc-fin" type="tel" placeholder="请您输入每个月的停车费"/></p></td>
+            </tr>
+            <tr>
+                <td class="label">需购买的额度</td>
+                <td><p class="room-warp"></p></td>
+            </tr>
+            <!--<tr>
+                <td class="label">&nbsp;</td>
+                <td><button>计算</button></td>
+            </tr>-->
+            </tbody>
+        </table>
+    </section>
+
+</div>
+</body>
+</html>
