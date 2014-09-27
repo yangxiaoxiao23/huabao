@@ -1,0 +1,10 @@
+.news-text {text-indent: 2em;}
+.content-wrap {}
+.content-wrap h3 {text-align: center;font-size: 1.2em;padding:10px;}
+.content-wrap .content-bd {margin:0 5px 10px;padding: 8px;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;background: #fff;box-shadow: 0 0 8px #ccc inset ;overflow: hidden;}
+.content-wrap .content-bd .con-pic {padding:10px 0;min-height: 120px;line-height: 120px;text-align: center;width: 100%;overflow: hidden;}
+.content-wrap .content-bd .con-pic img {max-width: 100%;max-height: 100%;margin: 0 auto;display: inline-block;vertical-align: middle;}
+
+.content-wrap .content-bd .con-text {font-size:14px;line-height: 20px;color:#666;}
+.content-wrap .content-bd .con-text.pro-title {font-size:16px;line-height: 24px;color:#000;}
+.content-wrap .content-bd .con-text .value {color:#333;}

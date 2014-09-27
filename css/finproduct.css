@@ -27,3 +27,21 @@ body {background:#CDE0FA;}
 .content-wrap .content-bd.fin-cont .cal tr .room-warp select {width: 100%;height: 30px;background:none;border: 0 none;outline: 0 none;color: #505050;font: 14px/30px arial,microsoft yahei,sans-serif;-webkit-appearance: none;}
 .content-wrap .content-bd.fin-cont .cal tr .room-warp.sc-wrap {padding-left: 5px;}
 .content-wrap .content-bd.fin-cont .cal tr .room-warp .sc-fin {-webkit-appearance: none;width:100%;height: 30px;line-height: normal;font-size: 14px;color:#666;   font-family: Arial, Helvetica, Microsoft YaHei; background: none;}
+
+.content-wrap .content-bd.fin-cont .cal tr .cal-btn {
+    display: block;
+    margin:20px 0;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background: #0090f7;
+    border:none;
+    border-radius: 3px;
+    font-family: Helvetica, 'Microsoft YaHei', Arial;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.quota-type, .pay-quota {color:#cf2a27;font-family: Arial, Helvetica, 'Microsoft YaHei';font-weight: bold;}

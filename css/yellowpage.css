@@ -2,7 +2,7 @@ body {background:#CDE0FA;}
 
 .search-wrap {margin:20px auto;padding:0 10px;}
 .search-wrap .search-inp {-webkit-appearance: none;padding:0 8px 0 24px;width:100%;height: 36px;
-    line-height: normal;border-radius: 8px;border:1px solid #000;font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;color:#666;background: #eeeeee url(../images/search.png) no-repeat 4px center;background-size:16px 16px;}
+    line-height: normal;border-radius: 8px;border:1px solid #000;font-family: Helvetica, Microsoft YaHei, Arial;color:#666;background: #eeeeee url(../images/search.png) no-repeat 4px center;background-size:16px 16px;}
 
 .content-wrap {}
 .content-wrap .content-bd {margin:10px;background: #eeeeee;border-radius: 8px;border:1px solid #96a0ae;box-shadow: 0 0 8px #ccc inset ;overflow: hidden;}

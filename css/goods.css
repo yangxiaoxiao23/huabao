@@ -64,9 +64,15 @@
     background-repeat:no-repeat;
 }
 .swipe_pic img {
-    width:100%;
     min-height:160px;
 }
+
+@media screen and (max-width:360px) {
+    .swipe_pic img {
+        width:100%;
+    }
+}
+
 .swipe_h3 {
     position:absolute;
     left:0;

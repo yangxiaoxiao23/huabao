@@ -1,0 +1,19 @@
+body {background:#CDE0FA;}
+
+.under-line {-webkit-appearance: none;padding:0 10px;border-bottom: 1px solid #222;}
+.content-wrap {}
+.content-wrap .content-bd {margin: 5px;
+    background: #eeeeee;
+    border-radius: 8px;
+    border: 1px solid #96a0ae;
+    box-shadow: 0 0 8px #ccc inset;
+    overflow: hidden;
+}
+
+.key {color:#666;}
+.val {color:#333;font-family: arial, sans-serif;font-weight: bold;}
+.acc-del-items {padding:5px 0;font-size:14px;}
+.acc-del-items .acc-del-item {padding:5px 10px;border-bottom:1px solid #ccc;}
+.acc-del-items .acc-del-item.last-item {border:none;}
+.acc-del-items .acc-del-item .tra-type {height: 26px;line-height: 26px;}
+.acc-del-items .acc-del-item .acc-count {height: 26px;line-height: 26px;}

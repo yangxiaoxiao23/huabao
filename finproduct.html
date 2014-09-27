@@ -15,6 +15,31 @@
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/finproduct.css"/>
     <script src="libs/zepto.min.js"></script>
+    <script>
+
+        $(function(){
+            var oScSelect = $('#js-room-num');  //下拉框的Select
+            var oScInput = $('#js-sc'); //停车费input
+            var oCalBtn = $('#js-cal'); //计算按钮
+            var oQuotaText = $('#js-quota'); //显示的文本对象
+            var multiple = 100; //倍率
+            var errorObj = {
+                1: '请先选择房号',
+                2: '请输入停车费金额'
+            };
+            oCalBtn.tap(function(){
+                var oRoomNum = oScSelect.val();
+                var oScVal = oScInput.val();
+                if(!oRoomNum){
+                    oQuotaText.text(errorObj[1]);
+                } else if(!oScVal){
+                    oQuotaText.text(errorObj[2]);
+                } else {
+                    oQuotaText.text('￥' + (parseInt(oScVal)*multiple));
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <noscript><a class="noScript" href="#">页面需要开启JavaScript体验 &gt;&gt;</a></noscript>
@@ -54,16 +79,16 @@
             </tr>
             <tr>
                 <td class="label">停车费</td>
-                <td><p class="room-warp sc-wrap"><input class="sc-fin" type="tel" placeholder="请您输入每个月的停车费"/></p></td>
+                <td><p class="room-warp sc-wrap"><input id="js-sc" class="sc-fin" type="tel" placeholder="请您输入每个月的停车费"/></p></td>
             </tr>
             <tr>
-                <td class="label">需购买的额度</td>
-                <td><p class="room-warp"></p></td>
-            </tr>
-            <!--<tr>
                 <td class="label">&nbsp;</td>
-                <td><button>计算</button></td>
-            </tr>-->
+                <td><button class="cal-btn" id="js-cal">计算</button></td>
+            </tr>
+            <tr>
+                <td class="label">需购买的额度:</td>
+                <td><span class="pay-quota" id="js-quota">0.00</span></td>
+            </tr>
             </tbody>
         </table>
     </section>
